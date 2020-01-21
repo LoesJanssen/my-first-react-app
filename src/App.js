@@ -1,26 +1,20 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Title from "./components/Title";
+import LikeCounter from "./components/LikeCounter";
+import AwesomeAnimals from "./components/AwesomeAnimals";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Haha Loeske kan het wel :p</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <main>
+          <Title />
+          <LikeCounter />
+          <AwesomeAnimals />
+        </main>
       </header>
-      <p>Maar goed, das natuurlijk ook logisch</p>
     </div>
   );
 }
